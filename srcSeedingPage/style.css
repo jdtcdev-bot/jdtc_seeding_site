@@ -1,0 +1,229 @@
+/* style.css */
+body {
+    font-family: 'Meiryo', 'Helvetica', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    margin: 0;
+    padding: 0;
+}
+
+.menu a {
+    display: flex;
+    align-items: center;
+    padding: 15px 25px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: background 0.3s;
+    line-height: 1;
+}
+
+.menu a.active,
+.menu a:hover {
+    background-color: #f0f0f0;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+    font-size: 28px;
+}
+
+header p {
+    margin: 0;
+    color: #555;
+}
+
+/* 카드 컨테이너 */
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+/* 카드 전체 링크 기본 스타일 제거 및 높이 유지 */
+.container a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    height: 100%;
+}
+
+/* 카드 */
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 100%;
+}
+
+/* hover 효과 */
+.container a:hover .card,
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* 카드 이미지 */
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+/* 카드 내용 */
+.card-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.card-content h3 {
+    margin: 0 0 10px 0;
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.card-content .date {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.card-content .tags {
+    margin-top: auto;
+}
+
+.card-content .tags span {
+    display: inline-block;
+    font-size: 12px;
+    color: #555;
+    background-color: #f0f0f0;
+    border-radius: 3px;
+    padding: 2px 6px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+/* collaboration 카드 전체 컨테이너 */
+.container_collab {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background-color: white;
+}
+
+/* 카드 스타일 */
+.card_collab {
+    width: 700px;
+    height: 60px;
+    background-color: #05C756;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    margin-top: 50px;
+}
+
+/* 카드 내용 텍스트 */
+.card_collab-content {
+    color: white;
+    text-align: left;
+}
+
+.card_collab-content h2 {
+    margin: 0 0 10px 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card_collab-content h3 {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.card_collab-content h4 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: normal;
+    opacity: 0.8;
+}
+
+.card_experience {
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 500px;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 20px auto;
+}
+.card_experience h1 {
+    font-size: 21px;
+    margin: 6px 0;
+}
+.card_experience h3 {
+    font-size: 15px;
+    margin: 4px 0;
+    font-weight: normal;
+}
+.card_experience p {
+    margin: 6px 0;
+    font-size: 16px;
+}
+.card_experience .spacer {
+    margin: 20px 0;
+}
+.card_experience a {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 4px;
+    margin: 15px 0;
+    background-color: #e5e7eb;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.card_experience a img {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+}
+.card_experience a:hover {
+    opacity: 0.85;
+}

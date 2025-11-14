@@ -1,0 +1,178 @@
+body {
+    font-family: 'Meiryo', 'Helvetica', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+/* 메뉴 */
+.menu {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.menu a {
+    display: flex;
+    align-items: center;
+    padding: 15px 25px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: background 0.3s;
+    line-height: 1;
+}
+
+.menu a.active,
+.menu a:hover {
+    background-color: #f0f0f0;
+}
+
+/* 헤더 */
+header {
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+    font-size: 24px;
+}
+
+header p {
+    margin: 0;
+    color: #555;
+}
+
+/* 대표 이미지 */
+.product-main-image {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.product-main-image img {
+    max-width: 500px;
+    width: 90%;
+    border-radius: 10px;
+}
+
+/* 제품 정보 및 갤러리 공통 정렬 */
+.product-info,
+.product-detail,
+.product-gallery {
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    padding: 0 20px;
+}
+
+/* 제목 스타일 통일 */
+.product-info h2,
+.product-detail h2,
+.product-gallery h2 {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #333;
+    background-color: #FDEBEC;
+    display: block;
+    width: 100%;
+    padding: 5px 20px;
+    box-sizing: border-box;
+    border-radius: 4px; 
+}
+/* 리스트 스타일 */
+.product-info ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.product-info ul li {
+    margin-bottom: 6px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* 테이블 스타일 */
+.product-info table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0 20px 0;
+}
+
+.product-info table th,
+.product-info table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.product-info table th {
+    background-color: #f0f0f0;
+    width: 150px; 
+    box-sizing: border-box;
+}
+
+/* 갤러리 */
+.product-gallery h2 {
+    margin-bottom: 10px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.product-detail-image {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.product-detail-image img {
+    max-width: 700px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product-detail p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+}
+.apply-button-bottom {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 700px;
+    max-width: 90%;
+    padding: 15px 0;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #eedcdd;
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+    z-index: 1000;
+}
+
+.apply-button-bottom:hover {
+    transform: translateX(-50%) translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
