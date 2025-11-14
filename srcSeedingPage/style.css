@@ -148,8 +148,27 @@ header p {
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     margin-top: 50px;
+    position: relative;
+}
+/* QR 코드 박스 */
+.qr-code {
+    position: absolute;   /* 카드 내부 오른쪽 위에 고정 */
+    top: 20px;
+    right: 20px;
+    width: 100px;         /* 원하는 크기 */
+    height: 100px;        /* 정사각형 */
+    background-color: #fff; /* 임시 배경 */
+    border-radius: 8px;     /* 모서리 둥글게 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
+.qr-code img {
+    width: 90%;  /* QR 코드 이미지가 박스 안에서 적절히 표시 */
+    height: auto;
+}
 /* 카드 내용 텍스트 */
 .card_collab-content {
     color: white;
